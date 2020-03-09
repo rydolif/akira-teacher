@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Регистрация</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" href="img/favicon.ico">
+	<meta name="theme-color" content="#000">
+
+	<link rel="stylesheet" href="css/main.min.css?v=1">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<script type="text/javascript">
+	  (function(){ 
+	    document.onreadystatechange = () => {
+	      if (document.readyState === 'complete') {
+	        let el = document.querySelector('#лого');
+	        let myAnimation = new LazyLinePainter(el, {"ease":"easeLinear","strokeWidth":12.6,"strokeOpacity":1,"strokeColor":"#4cddee","strokeCap":"square"}); 
+	        myAnimation.paint(); 
+	      }
+	    }
+	  })();
+	</script>
+	
+<!-- 	<div class="preloader">
+		<svg id="лого" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1720.84 436.62" data-llp-composed="true" class="lazy-line-painter"><defs><style>.cls-1{fill:#4cddee;}</style></defs><title>лого</title><path class="cls-1" d="M103.92,436.62H-.61L161.13,49.32h95.18l161.74,387.3H311.87L279.41,355.2h-143Zm104-263.52L167.73,276h80.32Z" transform="translate(0.61)" data-llp-id="лого-0" data-llp-duration="500" data-llp-delay="0" fill-opacity="0" style=""/><path class="cls-1" d="M531.93,436.62h-99V51.52h99V198.41L656.81,51.52H775.64L626.55,228.67l176.6,208H682.67L531.93,265.53Z" transform="translate(0.61)" data-llp-id="лого-1" data-llp-duration="500" data-llp-delay="500" fill-opacity="0" style=""/><path class="cls-1" d="M912.61,307.25h-99L802.54,0H923.65Z" transform="translate(0.61)" data-llp-id="лого-2" data-llp-duration="500" data-llp-delay="1000" fill-opacity="0" style=""/><path class="cls-1" d="M1058.41,436.62h-99V51.52h181q63.81,0,100.68,33.56,38,33,38,85.27,0,37.42-19.81,66t-55,42.36l116.63,157.89H1206.95L1098,289.74h-39.61Zm0-301.48v73.72h76.47q20.35,0,32.18-9.63t11.83-26.68q0-17-11.83-27.23t-32.18-10.18Z" transform="translate(0.61)" data-llp-id="лого-3" data-llp-duration="500" data-llp-delay="1500" fill-opacity="0" style=""/><path class="cls-1" d="M1406.1,436.62H1301.57l161.74-387.3h95.18l161.74,387.3H1614.05l-32.46-81.42h-143Zm104-263.52L1469.91,276h80.32Z" transform="translate(0.61)" data-llp-id="лого-4" data-llp-duration="500" data-llp-delay="2000" fill-opacity="0" style=""/><circle class="cls-1" cx="863.7" cy="383.27" r="53.36" data-llp-id="лого-5" data-llp-duration="500" data-llp-delay="2500" fill-opacity="0" style=""/></svg> 
+	</div> -->
+
+	<header class="header">
+
+		<div class="header__block">
+			<a href="/" class="header__logo header__logo">
+				<img src="img/logo.svg" alt="logo" width="145" height="50">
+			</a>
+			<a href="index.html" class="btn btn--profile">На главную</a>
+		</div>
+
+		<div class="header__block">
+			<div class="header__block_info">
+				<img src="img/profile.png" alt="">
+				<span>ivanivanov@mail.ru</span>
+				<ul>
+					<li>
+						<a href="#">
+							<img src="img/seting.png" alt="">
+							<span>Настройки</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/case.png" alt="">
+							<span>Оплата</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<main class="main register">
+		<section class="container">
+
+			<div class="crumbs">
+				<ul>
+					<li>
+						<a href="#">Личный кабинет</a>
+					</li>
+					<li>
+						<a href="#">Олимпиады</a>
+					</li>
+					<li>
+						<a href="#">Регистрация</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="register__header">
+				<div class="register__col">
+					<h3><img src="img/register__title.svg" alt=""> Регистрация на олимпиады</h3>
+				</div>
+				<div class="register__col">
+					<div class="register__header_info">
+						<p>
+							<span>Тренер:</span>
+							<b>Иванова Ирина</b>
+						</p>
+						<p>
+							<span>Город:</span>
+							<b>Мытищи</b>
+						</p>
+						<p>
+							<span>Центр:</span>
+							<b>“Улыбка”</b>
+						</p>
+						<p>
+							<span></span>
+							<a href="#"><span><img src="img/pansil.svg" alt=""></span>Изменить в профиле</a>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="register__tabs tabs">
+				<ul class="register__list">
+					<li><a href="#one">Регистрация учеников на олимпиады</a></li>
+					<li><a href="#two">Зарегистрированные ученики</a></li>
+				</ul>
+
+				<div id="one" class="register__wrap tabs__wrap">
+					<div class="register__wrap_header">
+						<p>Возрастная группа</p>
+						<p>Подгруппа</p>
+						<p>Дейвствия</p>
+					</div>
+					<div class="register__wrap_item">
+						<p><b>Кидс 1</b></p>
+						<p>4-6 лет, “Прямой счет”</p>
+						<p><a href="#" class="button button--accent">Добавить ученика</a></p>
+					</div>
+					<div class="register__wrap_item">
+						<p><b>Кидс 2</b></p>
+						<p>4-6 лет, “Формулы на 5”</p>
+						<p><a href="#" class="button button--accent">Добавить ученика</a></p>
+					</div>
+					<div class="register__wrap_item">
+						<p><b>Кидс 3</b></p>
+						<p>4-6 лет, “Формулы на 10”</p>
+						<p><a href="#" class="button button--accent">Добавить ученика</a></p>
+					</div>
+					<div class="register__wrap_item register__wrap_item--end">
+						<p><b>Кидс 4</b></p>
+						<p>4-6 лет, “Все формулы”</p>
+						<p><a href="#" class="button button--accent">Добавить ученика</a></p>
+					</div>
+					<div class="register__wrap_item">
+						<p><b>Джуниорс 1</b></p>
+						<p>7-8 лет, “Прямой счет”</p>
+						<p><a href="#" class="button button--accent">Добавить ученика</a></p>
+					</div>
+					<div class="register__wrap_item">
+						<p><b>Джуниорс 2</b></p>
+						<p>7-8 лет, “Формулы на 5”</p>
+						<p><a href="#" class="button button--accent">Добавить ученика</a></p>
+					</div>
+					<div class="register__wrap_item">
+						<p><b>Джуниорс 3</b></p>
+						<p>7-8 лет, “Формулы на 10”</p>
+						<p><a href="#" class="button button--accent">Добавить ученика</a></p>
+					</div>
+					<div class="register__wrap_item register__wrap_item--end">
+						<p><b>Джуниорс 4</b></p>
+						<p>7-8 лет, “Все формулы”</p>
+						<p><a href="#" class="button button--accent">Добавить ученика</a></p>
+					</div>
+					<div class="register__wrap_item">
+						<p><b>Тинс 1</b></p>
+						<p>9-12 лет, “Прямой счет”</p>
+						<p><a href="#" class="button button--accent">Добавить ученика</a></p>
+					</div>
+					<div class="register__wrap_item">
+						<p><b>Тинс 2</b></p>
+						<p>9-12 лет, “Формулы на 5”</p>
+						<p><a href="#" class="button button--accent">Добавить ученика</a></p>
+					</div>
+					<div class="register__wrap_item">
+						<p><b>Тинс 3</b></p>
+						<p>9-12 лет, “Формулы на 10”</p>
+						<p><a href="#" class="button button--accent">Добавить ученика</a></p>
+					</div>
+					<div class="register__wrap_item register__wrap_item--end">
+						<p><b>Тинс 4</b></p>
+						<p>9-12 лет, “Все формулы” </p>
+						<p><a href="#" class="button button--accent">Добавить ученика</a></p>
+					</div>
+
+					<div class="register__wrap_item">
+						<p><b>Взрослые</b></p>
+						<p>13 лет,и старше</p>
+						<p><a href="#" class="button button--accent">Я иду!</a></p>
+					</div>
+				</div>
+
+				<div id="two" class="register__wrap tabs__wrap">
+					<div class="register__wrap_header">
+						<p>Возрастная группа</p>
+						<p>Подгруппа</p>
+						<p>Дейвствия</p>
+					</div>
+					<div class="register__wrap_item">
+						<p><b>Кидс 1</b></p>
+						<p>4-6 лет, “Прямой счет”</p>
+						<p><a href="#" class="button button--accent">Добавить ученика</a></p>
+					</div>
+					<div class="register__wrap_item">
+						<p><b>Кидс 2</b></p>
+						<p>4-6 лет, “Формулы на 5”</p>
+						<p><a href="#" class="button button--accent">Добавить ученика</a></p>
+					</div>
+					<div class="register__wrap_item">
+						<p><b>Кидс 3</b></p>
+						<p>4-6 лет, “Формулы на 10”</p>
+						<p><a href="#" class="button button--accent">Добавить ученика</a></p>
+					</div>
+					<div class="register__wrap_item register__wrap_item--end">
+						<p><b>Кидс 4</b></p>
+						<p>4-6 лет, “Все формулы”</p>
+						<p><a href="#" class="button button--accent">Добавить ученика</a></p>
+					</div>
+					<div class="register__wrap_item">
+						<p><b>Джуниорс 1</b></p>
+						<p>7-8 лет, “Прямой счет”</p>
+						<p><a href="#" class="button button--accent">Добавить ученика</a></p>
+					</div>
+					<div class="register__wrap_item">
+						<p><b>Джуниорс 2</b></p>
+						<p>7-8 лет, “Формулы на 5”</p>
+						<p><a href="#" class="button button--accent">Добавить ученика</a></p>
+					</div>
+					<div class="register__wrap_item">
+						<p><b>Джуниорс 3</b></p>
+						<p>7-8 лет, “Формулы на 10”</p>
+						<p><a href="#" class="button button--accent">Добавить ученика</a></p>
+					</div>
+					<div class="register__wrap_item register__wrap_item--end">
+						<p><b>Джуниорс 4</b></p>
+						<p>7-8 лет, “Все формулы”</p>
+						<p><a href="#" class="button button--accent">Добавить ученика</a></p>
+					</div>
+					<div class="register__wrap_item">
+						<p><b>Тинс 1</b></p>
+						<p>9-12 лет, “Прямой счет”</p>
+						<p><a href="#" class="button button--accent">Добавить ученика</a></p>
+					</div>
+					<div class="register__wrap_item">
+						<p><b>Тинс 2</b></p>
+						<p>9-12 лет, “Формулы на 5”</p>
+						<p><a href="#" class="button button--accent">Добавить ученика</a></p>
+					</div>
+					<div class="register__wrap_item">
+						<p><b>Тинс 3</b></p>
+						<p>9-12 лет, “Формулы на 10”</p>
+						<p><a href="#" class="button button--accent">Добавить ученика</a></p>
+					</div>
+					<div class="register__wrap_item register__wrap_item--end">
+						<p><b>Тинс 4</b></p>
+						<p>9-12 лет, “Все формулы” </p>
+						<p><a href="#" class="button button--accent">Добавить ученика</a></p>
+					</div>
+
+					<div class="register__wrap_item">
+						<p><b>Взрослые</b></p>
+						<p>13 лет,и старше</p>
+						<p><a href="#" class="button button--accent">Я иду!</a></p>
+					</div>
+				</div>
+			</div>
+
+		</section>
+	</main>
+
+	<footer class="footer" id="footer">
+
+		<div class="footer__block">
+			<a href="index.html">
+				<img src="img/logo.png" alt="">
+			</a>
+			<p class="footer__copy">All rights reserved, 2018</p>
+		</div>
+	</footer>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
