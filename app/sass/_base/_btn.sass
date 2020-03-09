@@ -1,0 +1,85 @@
+.btn
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	height: 45px
+	border: none
+	outline: none
+	text-align: center
+	background-color: transparent
+	border: 1px solid $accent
+	font-size: 18px
+	color: $accent
+	padding-right: 20px
+	padding-left: 50px
+	font-weight: 700
+	border-radius: 20px
+	transition: all .6s
+
+	&:hover,
+	&:focus
+		border: 1px solid $accent
+		background: $accent
+		color: #fff
+
+		&::before
+			border-right: 10px solid #fff
+
+	&::before
+		content: ''
+		position: absolute
+		top: 50%
+		left: 20px
+		transform: translate(0, -50%)
+		border-bottom: 7px solid transparent
+		border-left: 10px solid transparent
+		border-right: 10px solid $accent
+		border-top: 7px solid transparent
+		transition: all .6s
+
+
+.button
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	height: 45px
+	border: none
+	outline: none
+	text-align: center
+	background-color: transparent
+	border: 1px solid $title
+	font-size: 18px
+	color: $title
+	font-weight: 700
+	border-radius: 20px
+	transition: all .6s
+	max-width: fit-content
+	padding: 0 20px
+	
+	&:hover,
+	&:focus
+		background-color: $title
+		color: #fff
+
+	&--blue
+		border: 1px solid #2256a7
+		color: #2256a7
+		max-width: 190px
+	
+		&:hover,
+		&:focus
+			background-color: #2256a7
+			color: #fff
+
+	&--white
+		border: 1px solid #fff
+		color: #fff
+		max-width: 190px
+
+		&:hover,
+		&:focus
+			background-color: transparent
+			border: 1px solid transparent
+			box-shadow: 0 0 4px 0 #c645be

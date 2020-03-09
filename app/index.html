@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Profile</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" href="img/favicon.ico">
+	<meta name="theme-color" content="#000">
+
+	<link rel="stylesheet" href="css/main.min.css?v=1">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <script type="text/javascript">
+      (function(){ 
+        document.onreadystatechange = () => {
+          if (document.readyState === 'complete') {
+            let el = document.querySelector('#лого');
+            let myAnimation = new LazyLinePainter(el, {"ease":"easeLinear","strokeWidth":12.6,"strokeOpacity":1,"strokeColor":"#4cddee","strokeCap":"square"}); 
+            myAnimation.paint(); 
+          }
+        }
+      })();
+    </script>
+
+<!-- 	<div class="preloader">
+		<svg id="лого" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1720.84 436.62" data-llp-composed="true" class="lazy-line-painter"><defs><style>.cls-1{fill:#4cddee;}</style></defs><title>лого</title><path class="cls-1" d="M103.92,436.62H-.61L161.13,49.32h95.18l161.74,387.3H311.87L279.41,355.2h-143Zm104-263.52L167.73,276h80.32Z" transform="translate(0.61)" data-llp-id="лого-0" data-llp-duration="500" data-llp-delay="0" fill-opacity="0" style=""/><path class="cls-1" d="M531.93,436.62h-99V51.52h99V198.41L656.81,51.52H775.64L626.55,228.67l176.6,208H682.67L531.93,265.53Z" transform="translate(0.61)" data-llp-id="лого-1" data-llp-duration="500" data-llp-delay="500" fill-opacity="0" style=""/><path class="cls-1" d="M912.61,307.25h-99L802.54,0H923.65Z" transform="translate(0.61)" data-llp-id="лого-2" data-llp-duration="500" data-llp-delay="1000" fill-opacity="0" style=""/><path class="cls-1" d="M1058.41,436.62h-99V51.52h181q63.81,0,100.68,33.56,38,33,38,85.27,0,37.42-19.81,66t-55,42.36l116.63,157.89H1206.95L1098,289.74h-39.61Zm0-301.48v73.72h76.47q20.35,0,32.18-9.63t11.83-26.68q0-17-11.83-27.23t-32.18-10.18Z" transform="translate(0.61)" data-llp-id="лого-3" data-llp-duration="500" data-llp-delay="1500" fill-opacity="0" style=""/><path class="cls-1" d="M1406.1,436.62H1301.57l161.74-387.3h95.18l161.74,387.3H1614.05l-32.46-81.42h-143Zm104-263.52L1469.91,276h80.32Z" transform="translate(0.61)" data-llp-id="лого-4" data-llp-duration="500" data-llp-delay="2000" fill-opacity="0" style=""/><circle class="cls-1" cx="863.7" cy="383.27" r="53.36" data-llp-id="лого-5" data-llp-duration="500" data-llp-delay="2500" fill-opacity="0" style=""/></svg> 
+	</div>
+ -->
+
+	<header class="header">
+
+		<div class="header__block">
+			<a href="/" class="header__logo header__logo">
+				<img src="img/logo.svg" alt="logo" width="145" height="50">
+			</a>
+			<a href="index.html" class="btn btn--profile">На главную</a>
+		</div>
+
+		<div class="header__block">
+			<div class="header__block_info">
+				<img src="img/profile.png" alt="">
+				<span>ivanivanov@mail.ru</span>
+				<ul>
+					<li>
+						<a href="#">
+							<img src="img/seting.png" alt="">
+							<span>Настройки</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/case.png" alt="">
+							<span>Оплата</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<section class="container">
+
+			<div class="crumbs">
+				<ul>
+					<li>
+						<a href="#">Личный кабинет</a>
+					</li>
+					<li>
+						<a href="#">Олимпиады</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="olimpiady__battle">
+				<img src="img/battle.png" alt="">
+			</div>
+
+			<div class="olimpiady__btn">
+				<a href="#" class="button">Скачать график олимпиад</a>
+				<a href="#" class="button">Хочу провести олимпиаду</a>
+			</div>
+
+			<div class="olimpiady__content">
+
+				<div class="olimpiady__content_col">
+					<div class="olimpiady__content_title">
+						<img src="img/goal.svg" alt="">
+						<h3>ПРЕДСТОЯЩИЕ ОЛИМПИАДЫ</h3>
+					</div>
+					<div class="olimpiady__content_item" style="background-image: url(img/olimpiady__content_item1.png);">
+						<div>
+							<h4><b>Akira Battle – <br></b>Игры в сторону!</h4>
+							<p><b>24 – 31 февраля 2020</b></p>
+						</div>
+						<div>
+							<a href="#" class="button button--white">Положение</a>
+							<a href="#" class="button button--white">Регистрация</a>
+						</div>
+					</div>
+					<div class="olimpiady__content_item" style="background-image: url(img/olimpiady__content_item2.png);">
+						<div>
+							<h4><b>Akira Battle – <br></b>Вперед к победам!</h4>
+							<p><b>15 - 20 апреля 2020</b></p>
+						</div>
+						<div>
+							<a href="#" class="button button--white">Положение</a>
+							<a href="#" class="button button--white">Регистрация</a>
+						</div>
+					</div>
+					<div class="olimpiady__content_item" style="background-image: url(img/olimpiady__content_item3.png);">
+						<div>
+							<h4><b>Akira Battle – <br></b>Не время расслабляться!</h4>
+							<p><b>15 - 20 апреля 2020</b></p>
+						</div>
+						<div>
+							<a href="#" class="button button--white">Положение</a>
+							<a href="#" class="button button--white">Регистрация</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="olimpiady__content_col">
+					<div class="olimpiady__content_title">
+						<img src="img/podium.svg" alt="">
+						<h3>Результаты ОЛИМПИАД</h3>
+					</div>
+					<div class="olimpiady__content_item olimpiady__content_item--resault">
+						<div>
+							<h4><b>Akira Battle – <br></b>Игры в сторону!</h4>
+							<p><b>24 – 31 февраля 2020</b></p>
+						</div>
+						<div>
+							<a href="#" class="button button--blue">Положение</a>
+							<a href="#" class="button button--blue">Регистрация</a>
+						</div>
+					</div>
+					<div class="olimpiady__content_item olimpiady__content_item--resault">
+						<div>
+							<h4><b>Akira Battle – <br></b>Игры в сторону!</h4>
+							<p><b>24 – 31 февраля 2020</b></p>
+						</div>
+						<div>
+							<a href="#" class="button button--blue">Положение</a>
+							<a href="#" class="button button--blue">Регистрация</a>
+						</div>
+					</div>
+					<div class="olimpiady__content_item olimpiady__content_item--resault">
+						<div>
+							<h4><b>Akira Battle – <br></b>Игры в сторону!</h4>
+							<p><b>24 – 31 февраля 2020</b></p>
+						</div>
+						<div>
+							<a href="#" class="button button--blue">Положение</a>
+							<a href="#" class="button button--blue">Регистрация</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+		</section>
+	</main>
+
+	<footer class="footer" id="footer">
+
+		<div class="footer__block">
+			<a href="index.html">
+				<img src="img/logo.png" alt="">
+			</a>
+			<p class="footer__copy">All rights reserved, 2018</p>
+		</div>
+
+	</footer>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

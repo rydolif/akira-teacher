@@ -1,0 +1,282 @@
+
+
+@media only screen and (max-width : 1600px)
+	.container
+		max-width: 992px
+
+	.btn, .button
+		font-size: 14px
+		height: 35px
+
+	.crumbs
+		margin: 15px 0
+
+	.olimpiady
+		&__btn
+			margin-bottom: 20px
+
+			a
+				margin-right: 15px
+		
+		&__content
+			padding: 15px
+
+			&_title
+				margin-bottom: 20px
+
+				h3
+					font-size: 20px
+			
+			&_item
+				padding: 15px
+				margin-bottom: 15px
+
+				h4
+					font-size: 18px
+
+				p
+					font-size: 16px
+
+				a
+					margin: 10px 0
+		
+
+@media only screen and (max-width : 1200px)
+	.header
+		&__logo
+			width: 130px
+			margin-right: 5px
+
+			img
+				width: 100%
+				height: auto
+
+
+@media only screen and (max-width : 992px)
+	.container
+		max-width: 767px
+
+	.header
+		padding: 10px 15px
+
+		&__info
+			border: none
+			padding-right: 70px
+			padding-bottom: 0
+
+			&_item
+				margin-right: 15px
+
+				&:nth-child(1),
+				&:nth-child(2)
+					display: none
+		
+		&__block
+			&_info
+				margin-left: 15px
+
+				img
+					margin-right: 5px
+
+			p
+				font-size: 14px
+
+				img
+					margin-right: 5px
+
+			b
+				font-size: 20px
+
+	.footer
+		padding: 15px
+		flex-wrap: wrap
+		justify-content: space-around
+		text-align: center
+
+
+@media only screen and (max-width : 767px)
+	.container
+		max-width: 576px
+
+	.olimpiady
+		&__content
+			padding: 10px
+			margin-bottom: 25px
+
+			&_title
+				text-align: center
+
+				h3
+					font-size: 18px
+
+				img
+					display: none
+
+			&_item
+				justify-content: center
+				text-align: center
+				padding: 10px
+
+				h4
+					font-size: 16px
+
+				p
+					font-size: 14px
+
+				div
+					max-width: 100%
+
+					&:nth-child(2)
+						max-width: 100%
+		
+		&__btn
+			justify-content: space-around
+			
+			a
+				margin-bottom: 5px
+
+				&:last-child
+					margin-bottom: 0
+
+	.grid
+		&__content
+			font-size: 14px
+
+		td
+			padding-left: 65% !important
+			&::before
+				content: attr(data-text)
+				top: 50% !important
+				transform: translate(0, -50%) !important
+
+		th
+			display: none !important
+
+
+		tr
+			&:nth-child(1),
+			&:nth-child(2),
+			&:nth-child(3)
+				display: none
+
+			&:nth-child(odd)
+				background-color: #fff
+
+
+@media only screen and (max-width : 576px)
+	.container
+		max-width: 100%
+
+	.btn
+		padding: 0 10px
+
+		&::before
+			display: none
+
+	.header
+		&__logo
+			width: 100px
+
+		&__block
+			p
+				img
+					width: 25px
+
+			&_info
+				padding-right: 17px
+
+				&::before
+					top: 8px
+
+				img
+					width: 20px
+					height: auto
+
+				ul
+					padding: 10px
+
+
+@media only screen and (max-width : 480px)
+	.btn
+		font-size: 12px
+		width: 100%
+
+	.header
+		&__logo
+			width: 90px
+
+			img
+				width: 90px
+
+		&__info
+			padding-right: 60px
+
+			&_item
+				padding-left: 30px
+				margin-right: 0
+
+				div
+					width: 25px
+					height: 25px
+
+					img
+						width: 60%
+						height: 60%
+		
+		&__block
+			p,
+			&_info
+				img
+					display: none
+
+				ul
+					width: 150px
+					padding: 10px 15px
+
+					img
+						display: block
+						width: 14px
+						height: 14px
+
+				li
+					margin-bottom: 10px
+
+			p, span
+				font-size: 10px
+
+			b
+				font-size: 14px
+
+			&_info
+				margin-left: 10px
+				padding-right: 10px
+
+				&::before
+					border-bottom: 4px solid transparent
+					border-left: 4px solid transparent
+					border-right: 4px solid transparent
+					border-top: 4px solid #fff
+
+	.main
+		padding: 60px 0 90px
+
+	.olimpiady
+		&__content
+			&_col
+				width: 100%
+
+			&_title
+				margin-bottom: 10px
+
+			&_item
+				text-align: center
+
+				div
+					width: 100%
+
+				a
+					margin: 10px auto
+				
+
+
+

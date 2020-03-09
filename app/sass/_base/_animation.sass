@@ -1,0 +1,104 @@
+// animation: hover-back .3s linear 1 forwards
+
+
+//----------------preloader-img---------------
+@keyframes pulse-outer
+	0%
+		opacity: .1
+	50%
+		opacity: .5
+	100%
+		opacity: 0
+
+
+@keyframes pulse-inner
+	0%
+		opacity: 1
+		transform: scale(0)
+	100%
+		opacity: 0
+		transform: scale(1)
+
+
+//----------------arrow-img---------------
+@keyframes arrow
+	0%
+		margin-right: 35px
+	50%
+		margin-right: 50px
+	100%
+		margin-right: 35px
+
+//----------------arrow-img---------------
+@keyframes mental--arrow
+	0%
+		left: 0
+	50%
+		left: 20px
+	100%
+		left: 0
+
+//----------------hero-img---------------
+@keyframes fadein
+	0%
+		z-index: 0
+	95%
+		z-index: 1
+	100%
+		z-index: 1
+
+//----------------hover-img---------------
+@keyframes hover
+	0%
+		transform: scale(1)
+	100%
+		transform: scale(1.1)
+
+@keyframes hover-back
+	0%
+		transform: scale(1.1)
+	100%
+		transform: scale(1)
+
+//----------------parallax---------------
+
+@keyframes parallax
+	0%
+		transform: translate(-50%, -50%)
+
+	50%
+		transform: translate(-50%, 120%)
+
+	100%
+		transform: translate(-50%, -50%)
+
+
+//----------------call---------------
+
+@keyframes call
+	0%
+		transform: translate(-50%, -50%) rotate(0deg)
+
+	33%
+		transform: translate(-50%, -50%) rotate(-10deg)
+
+	66%
+		transform: translate(-50%, -50%) rotate(10deg)
+
+	100%
+		transform: translate(-50%, -50%) rotate(0deg)
+
+
+
+// //----------------hover-img---------------
+// @keyframes slide-hover
+// 	0%
+// 		transform: scale(1)
+// 	100%
+// 		transform: scale(1.4)
+
+// @keyframes slide-hover-back
+// 	0%
+// 		transform: scale(1.4)
+// 	100%
+// 		transform: scale(1)
