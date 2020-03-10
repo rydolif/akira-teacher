@@ -45,10 +45,7 @@ gulp.task('styles', function() {
 gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',  			//----jquery
-		'app/libs/jquery.validate.js', 					//----форма
-		'app/libs/jquery.mask.min.js', 					//----форма
 		'app/libs/jquery.popupoverlay.js', 				//----модалки
-		'app/libs/jquery.spincrement.min.js', 		//----цифри анімованні
 		'app/libs/lazy-line-painter-1.9.6.min.js',
 		'app/js/common.js', // Always at the end
 		])

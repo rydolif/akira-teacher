@@ -408,6 +408,25 @@
 				border-bottom: 1px solid #f3f3f3
 
 
+.result
+
+	&__header
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		align-items: center
+		margin-bottom: 45px
+
+		.button
+			max-width: fit-content
+
+		h3
+			margin-right: 15px
+
+	&__list
+		li
+			width: 33.33333%
+
 
 .footer
 	position: absolute
@@ -460,81 +479,30 @@
 			height: 55px
 
 
-// .grid
-// 	width: 100%
-// 	margin-bottom: 20px
+.grid
+	width: 100%
+	margin-bottom: 20px
+	border-collapse: separate
+	border-spacing: 5px
 
-// 	&__content
-// 		margin-bottom: 20px
-// 		font-size: 18px
+	td, th
+		padding: 10px
+		text-align: center
+		border-radius: 15px
 
-// 	td, th
-// 		border: 1px solid #dadada
-// 		padding: 10px
-// 		text-align: center
+	td
+		background-color: #f3f3f3
 
-// 	tr
-// 		&:nth-child(odd)
-// 			background-color: #e6e6e6
-// 	th
-// 		background-color: #4cdaed
-// 		color: #fff
-// 		font-weight: 500
+	th
+		background-color: #4cdaed
+		color: #fff
+		font-weight: 500
 
-// th, td
-// 	cursor: pointer
+	&__td--pink
+		background-color: #9247c3 !important
 
-// 	&:hover,
-// 	&:focus
-// 		.profile--info__check
-// 			display: block
-
-// 	.profile--info__check
-// 		display: none
-// 		position: absolute
-// 		background: #fff
-// 		text-align: left
-// 		color: $text
-
-
-// 		label
-// 			position: relative
-// 			top: 0
-// 			padding-left: 30px
-
-// 			&::before
-// 				content: ''
-// 				display: block
-// 				position: absolute
-// 				border-radius: 50%
-
-// 			&::before
-// 				width: 15px
-// 				height: 15px
-
-// 			&::after
-// 				display: none
-
-// 		input[type="radio"]
-// 			display: none
-
-// 		input[type="radio"]:checked + .cirle--green::before
-// 			background-color: #c4df9b
-
-// 		input[type="radio"]:checked + .cirle--red::before
-// 			background-color: #f69d67
-
-
-// 		.cirle--green
-// 			&::before
-// 				color: #fff
-// 				border: 1px solid #c4df9b
-
-// 		.cirle--red
-// 			&::before
-// 				color: #fff
-// 				border: 1px solid #f69d67
-
+	&__td--green
+		background-color: #3ba5b2 !important
 
 
 

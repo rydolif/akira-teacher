@@ -1,7 +1,7 @@
 $(function() {
 
 //---------------------------tabs-----------------------
-  $('.tabs__wrap').hide();
+	$('.tabs__wrap').hide();
   $('.tabs__wrap:first').show();
   $('.tabs ul a:first').addClass('active');
    $('.tabs ul a').click(function(event){
